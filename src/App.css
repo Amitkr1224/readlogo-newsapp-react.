@@ -1,38 +1,129 @@
-.App {
-  text-align: center;
+body{
+  background-color:#dadada;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.heading{
+  background-color: white;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.heading img{
+  width: 15%;
+  margin: auto;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  /* justify-content: space-between; */
+  /* align-self: flex-end; */
+  border-radius: 15px;
+  /* margin: 8px;
+  margin-left: 20px; */
+}
+.search{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  /* align-items: center; */
+  margin-top: 50px;
+  /* font-size: 1.5rem; */
+  /* position: sticky;
+  top: 0;
+  background: transparent; */
+}
+
+.searchbox{
+  width: 70%;
+  padding: 15px;
+  outline: none;
+  border: none;
+  font-size: 1.3rem;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px; 
+}
+
+.search-btn{
+  width: 10%;
+  padding: 15px;
+  font-size: 1.3rem;
+  background-color: #6868ff;
+  border: none;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.search-btn:hover{
+  cursor: pointer;
+  background-color: #7a7af5;
+}
+.container{
+  padding: 20px;
+  margin: auto;
+  margin-top: 50px;
+  width: 85%;
+  /* background-color: wheat; */
+  /* height: 500px; */
+  display: flex;
+  flex-wrap: wrap;
+  /* margin-bottom: 100px; */
+  margin-left:120px;
+
+
+}
+
+.article{
+  border-radius: 10px;
+  font-family: 'Itim', cursive;
+  width: 23%;
+  /* height: 400px; */
+  background-color: white;
+  margin: 8px;
+  overflow: hidden;
+  
+}
+.article h3{
+ margin-top: 5px;
+ padding:5px;
+ font-weight: 500;
+}
+.article h4{
+font-weight: 500;
+/* padding: 5px; */
+text-indent:15px;
+}
+.newsimg{
+  height: 200px;
+  overflow: hidden;
+  width: 100%;
+  /* border-radius: 10px; */
+}
+.article:hover{
+  cursor: pointer;
+  box-shadow: 5px 2px  10px rgb(165, 156, 156);
+  
+}
+.container a{
+  text-decoration: none;
+  margin: 10px;
+  background-color: #6868ff;
+  color: black;
+  font-size: 1.2rem;
+  border-radius: 15px;
+  padding: 7px;
+}
+a:hover{
+  cursor: pointer;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.container h3{
+  color: grey;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.read{
+  margin-bottom: 20px;
+}
+.footer{
+  display: flex;
+  justify-content: center;
+  background-color: #f6f6f6;
+  height: 80px
+}
+.footer img{
+  margin-top: 10px;
+  margin: 15px;
+}
+.footer img:hover{
+  border: 2px dotted black;
+  border-radius:15px ;
 }
